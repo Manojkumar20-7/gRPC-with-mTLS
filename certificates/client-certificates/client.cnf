@@ -1,0 +1,20 @@
+[req]
+distinguished_name=req_distinguished_name
+req_extensions=v3_extensions
+x509_extensions=v3_extensions
+prompt=no
+
+[req_distinguished_name]
+C = IN
+ST = Tamilnadu
+L = Chennai
+O = Software Developer
+OU = Computer
+CN = localhost
+
+[v3_extensions]
+basicConstraints=CA:FALSE
+subjectAltName=@alt_names
+
+[alt_names]
+DNS.1=localhost
